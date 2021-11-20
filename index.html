@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiside slide caption 2</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #eee;
+            margin: 0 auto;
+            position: relative;
+            padding: 5px;
+        }
+        .box-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .slid1{
+            width: 50%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: all 0.5s 0s;
+        }
+        .box:hover .slid1{
+            top: 0;
+            left: 0;
+        }
+
+        .slid2{
+            width: 50%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            top: -100%;
+            right: 0;
+            transition: all 0.5s 0s;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .box:hover .slid2{
+            top: 0;
+            right: 0;
+        }
+        .slid2 ul{
+            list-style: none;
+            background-color: rgb(114, 94, 94);
+        }
+        .slid2 ul li{
+            padding: 5px;
+            
+        }
+
+        .slid3{
+            width: 50%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            left: 0;
+            bottom: -100%;
+            transition: all 0.5s 0s;
+        }
+        .box:hover .slid3{
+            bottom: 0;
+            left: 0;
+        }
+
+        .slid4{
+            width: 50%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            position: absolute;
+            right: -100%;
+            bottom: 0;
+            transition: all 0.5s 0s;
+        }
+        .box:hover .slid4{
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#" class="box-img">
+            <img src="ej.jpg" alt="">
+        </a>
+        <div class="slid1"></div>
+        <div class="slid2"></div>
+        <div class="slid3"></div>
+        <div class="slid4"></div>
+</body>
+</html>
